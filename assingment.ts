@@ -10,9 +10,9 @@ const formatString = (input: string, toUpper?: boolean): string => {
 const formatString1 = formatString("Hello");
 const formatString2 = formatString("Hello", true);
 const formatString3 = formatString("Hello", false);
-// console.log(formatString1);
-// console.log(formatString2);
-// console.log(formatString3);
+console.log(formatString1);
+console.log(formatString2);
+console.log(formatString3);
 
 function filterByRating(
   items: { title: string; rating: number }[]
@@ -25,7 +25,7 @@ const books = [
   { title: "Book C", rating: 5.0 },
 ];
 
-// console.log(filterByRating(books));
+console.log(filterByRating(books));
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.reduce((acc, curr) => acc.concat(curr), []);
